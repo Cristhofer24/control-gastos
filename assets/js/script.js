@@ -2,7 +2,7 @@ let listaNomGastos = [];
 let listaValGastos = [];
 let editIndex = -1; 
 
-function clickBolton() {
+function clickBoton() {
     let gasto = document.getElementById("nombreGasto").value;
     let valor = document.getElementById("valorGasto").value;
 
@@ -12,9 +12,14 @@ function clickBolton() {
     }
 
     if (editIndex === -1) {
-       
-        listaNomGastos.push(gasto);
-        listaValGastos.push(valor);
+        if(valor>150){
+            alert("No puedes gastar mas de $150 por mes");
+        }else{
+            listaNomGastos.push(gasto);
+            listaValGastos.push(valor);
+            console.log( listaValGastos);
+        }
+
     } else {
         
         listaNomGastos[editIndex] = gasto;
