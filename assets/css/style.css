@@ -112,3 +112,56 @@ ul li:last-child {
     color: #fff;
 
 }
+@media (max-width: 1200px) {
+    .main-container {
+        width: 100%;
+    }
+    .container {
+        padding: 30px;
+        gap: 30px;
+    }
+    .img-container img {
+        width: 60%;
+    }
+}
+
+/* Para pantallas menores de 768px (tabletas) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        gap: 20px;
+    }
+    .img-container img {
+        width: 70%;
+    }
+    button {
+        font-size: 1rem;
+    }
+    .form-group {
+        width: 80%;
+    }
+    .total {
+        font-size: 20px;
+    }
+}
+
+/* Para pantallas menores de 576px (móviles) */
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+        gap: 15px;
+    }
+    .img-container img {
+        width: 80%;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .total {
+        font-size: 18px;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 8px 30px;
+    }
+}
